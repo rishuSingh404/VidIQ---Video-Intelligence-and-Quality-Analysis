@@ -1,0 +1,36 @@
+Frame Extraction (NOT INCLUDED IN THIS FOLDER):
+1) Video_List.py
+2) Frame_by_Frame.py (Functions, not for running)
+
+Given Artifact Extraction (NOT INCLUDED IN THIS FOLDER):
+1) Artifacts_Frame_List.py
+2) Artifacts.py (Functions, not for running)
+
+Jerkiness Extraction (Follow this sequence to run the files):
+1) TimeDifference.py
+2) MotionIntensity.py
+3) Jerkiness.py
+
+Flickering Extraction:
+1) Flickering
+
+Mosquito Noise Extraction:
+1) MosquitoNoise.py
+
+Functions for Calculations (Not for running):
+1) Functions.py
+
+Obtain all the artifacts of a video into a single excel file:
+1) AllArtifactsCombine.py
+
+Combine selected videos into training and testing data sets (run after executing AllArtifactsCombine.py):
+1) DataCombine.py (run AllArtifactsCombine.py again first then run this if any data are updated)
+2) DataCombine with Processing(for Normalising Data, run DataCombine.py first then run this)
+
+Model Training:
+1) LSTM model (keras).py
+2) LSTM model (keras) with PCA feature selection.py
+
+Load Model (For testing model):
+1) LoadModel.py (all features)
+2) LoadModel (PCA).py (with PCA)
